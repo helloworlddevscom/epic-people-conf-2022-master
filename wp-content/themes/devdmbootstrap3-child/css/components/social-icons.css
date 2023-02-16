@@ -1,0 +1,15 @@
+/**
+ * Social icons with inline logo images.
+ */
+
+.social-icons {
+  display: inline-block;
+  margin: 5px 5px 20px 0;
+}
+
+.social-icons img,
+.social-icons img.alignleft {
+  float: none;
+  margin: 0;
+}
+

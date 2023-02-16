@@ -1,0 +1,25 @@
+/**
+ * Venue Page
+ */
+
+.venue-page-title {
+    padding: 20px 0;
+    background-image: url('/wp-content/themes/devdmbootstrap3-child/img/Banner-Program.png');
+    height: 230px;
+    z-index: 1;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.venue-main-content {
+    background-color: #F7F7F7;
+}
+
+.venue-main-content__content{
+    background-color: #FFFFFF;
+    z-index: 2;
+    margin-top: -155px;
+    position: relative;
+}

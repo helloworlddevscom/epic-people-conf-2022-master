@@ -1,0 +1,118 @@
+/*
+ * Base styling for simple HTML elements that will applied to all breakpoints.
+ */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    min-width: 375px;
+    overflow-x: hidden;
+    margin: 0; /* bottom = footer height */
+    background-color: #F7F7F7;
+    padding-bottom: 0;
+}
+
+
+/* Lists */
+
+
+/* Unordered list */
+
+ul {
+    /*list-style: none;*/
+    margin: 26px 0;
+    padding-left: 17px;
+}
+
+ul li {
+    /*position: relative;*/
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+/*ul li:before {*/
+/*    content: "•";*/
+/*    position: absolute;*/
+/*    top: -.24em;*/
+/*    left: -26px;*/
+/*    font-size: 25px;*/
+/*    color: #AA3F38;*/
+/*}*/
+
+ul ul {
+    margin-top: 2px;
+}
+
+/* Ordered list */
+
+ol {
+    margin: 26px 0;
+    padding-left: 35px;
+}
+
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+
+ol li {
+    position: relative;
+    counter-increment: my-awesome-counter;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+ol li::before {
+    content: counter(my-awesome-counter) ". ";
+    position: absolute;
+    top: .05em;
+    left: -27px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+ol li:last-child {
+    padding-bottom: 0;
+}
+
+/* Large lists */
+
+ul.large {
+
+}
+
+ul.large li,
+ol.large li {
+    font-size: 18px;
+}
+
+ul.large li:before {
+    top: -.29em;
+    font-size: 30px;
+}
+
+ol.large li:before {
+    top: 0;
+}
+
+
+/* Horizontal rule */
+
+
+hr,
+hr.wp-block-separator {
+    border-top: none;
+    border-bottom: solid 1px #e5e9ec;
+    margin: 40px 0;
+}
+
+
+/* Images */
+
+p > img:first-child:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}

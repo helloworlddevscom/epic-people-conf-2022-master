@@ -1,0 +1,80 @@
+/**
+ * Reusable components
+ *
+ * NOTE: This is an attempt to start refactoring this CSS,
+ * so it is written min-width instead of max-width like the rest of the CSS.
+ * This is to match the min-width of Bootstrap and make it less confusing.
+*/
+
+
+/* White box component */
+
+/*.white-box {*/
+/*    margin-top: 40px;*/
+/*    margin-bottom: 40px;*/
+/*}*/
+
+/*.white-box > *:first-child {*/
+/*    margin-top: 0;*/
+/*}*/
+
+/*.white-box > *:last-child {*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+
+/* Creme background component */
+
+.background--creme {
+    background: rgb(29,231,197);
+    background: linear-gradient(45deg, rgba(29,231,197,1) 35%, rgba(167,242,159,1) 100%);
+    background-size: cover;
+    box-shadow: 0 3px 20px	
+        rgb(52, 81, 163);
+}
+
+.background--creme > *:last-child {
+    margin-bottom: 0;
+}
+
+.background--creme a {
+    /*color: #F1D298;*/
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: 0.4px;
+}
+
+.background--creme a:hover {
+    /*color: #FFFFFF;*/
+}
+
+.background--creme h1,
+.background--creme h2,
+.background--creme h3 {
+    color: #306EB3;
+}
+
+.background--creme blockquote,
+.background--creme blockquote p {
+    padding: 0;
+    color: #10235C;
+}
+
+/* TABLET */
+
+/* @media (min-width: 778px) {
+    .background--creme {
+        background-image: url('../../img/Background_Homepage_Tablet@2x.png');
+    }
+} */
+
+/* DESKTOP */
+/* 
+@media (min-width: 992px) {
+    .background--creme {
+        background-image: url('../../img/Background_Homepage_Desktop@2x.png');
+    }
+} */

@@ -1,0 +1,60 @@
+/**
+ * Blockquote with an optional image to the right.
+ * As used on "About" page.
+ */
+
+.quoted {
+  margin: 37px 0 37px 0;
+  padding-bottom: 10px;
+  border-left: 8px solid #A7F29F;;
+}
+
+.quoted .circle-image {
+  width: 200px;
+  height: 200px;
+  margin-top: 15px;
+  margin-left: 25px;
+  clear: both;
+}
+
+.quoted .program.circle-image {
+  width: 127px;
+  height: 127px;
+  margin-top: 15px;
+  margin-left: 25px;
+  clear: both;
+}
+
+.quoted > *:last-child {
+  margin-bottom: 0;
+}
+
+.quoted blockquote {
+  margin: 0 0 12px 0;
+  padding: 0 0 0 48px;
+}
+
+.quoted .quoted-person {
+  display: block;
+  padding-left: 48px;
+  color:#305173;
+}
+
+.quoted .circle-image {
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: 630px) {
+  .quoted .circle-image {
+    float: right;
+  }
+
+  .quoted .circle-image + blockquote {
+    width: calc(100% - 225px);
+  }
+
+  .quoted .circle-image + blockquote + .quoted-person {
+    width: calc(100% - 225px);
+  }
+}

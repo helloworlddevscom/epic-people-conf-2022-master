@@ -1,0 +1,101 @@
+/* TABLE STYLING - Pangaea related tables */
+/* Applying the class `schedule-table` to the <table> tag will allow for this to work */
+/* properly */
+
+table.schedule-table {
+    border: none;
+}
+
+@media only screen and (min-width: 750px) {
+    table.schedule-table {
+        table-layout: fixed;
+    }
+}
+
+.schedule-table td {
+    padding: 0 5px;
+    border-top: 8px solid white;
+}
+
+.schedule-table td strong {
+    margin: 0 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+table.schedule-table tbody tr:first-child {
+    background-color: #275B71;
+    color: white;
+}
+
+table.schedule-table tbody tr:first-child strong {
+    font-size: 16px;
+}
+
+table.schedule-table tbody tr td {
+    vertical-align: initial;
+}
+
+h3.table-header {
+    margin: 45px 0 10px 0;
+    color: #275B71;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.schedule-table td.table-blue-cell {
+    padding: 5px 10px;
+    color: #275B71;
+    font-weight: 700;
+    border-radius: 6px;
+    background-color: rgba(28, 133, 160, .2);
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+.schedule-table td.table-orange-cell,
+.schedule-table td.table-yellow-cell,
+.schedule-table td.table-replay-cell {
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-left: 8px solid white;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
+.schedule-table td.table-orange-cell {
+    color: #275B71;
+    background-color: rgba(218, 124, 29, 0.5);
+}
+
+.schedule-table td.table-yellow-cell {
+    color: #275B71;
+    background-color: rgba(250, 211, 109, .50);
+}
+
+.schedule-table td.table-replay-cell {
+    position: relative;
+    background-color: white;
+    color: #1c85a0;
+}
+
+.schedule-table td.table-replay-cell::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 98%;
+    height: 100%;
+    border: 1px solid #F9E6B8;
+}
+
+.schedule-table td:first-child {
+    border-left: 0;
+}
+
+.schedule-table td:last-child {
+    border-right: 0;
+}

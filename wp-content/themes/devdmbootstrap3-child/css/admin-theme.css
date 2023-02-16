@@ -1,0 +1,11 @@
+/**
+ * Overrides for admin theme.
+ */
+
+
+/* Display shortcode block within Gutenberg editor vertically,
+so it can still be used when inside a tiny column block.
+ */
+.wp-block-shortcode {
+  flex-direction: column;
+}

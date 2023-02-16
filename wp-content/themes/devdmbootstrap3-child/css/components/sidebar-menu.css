@@ -1,0 +1,60 @@
+/**
+ * Right sidebar menu seen on some pages.
+ */
+
+.main-content__content .content__page-sidebar  {
+  float: right;
+  max-width: 285px;
+  margin-top: 45px;
+}
+
+.blue-box-right {
+  padding: 30px;
+  border: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-image: linear-gradient(225deg, #A8F2A0 0%, #1EE8C5 100%);
+  box-shadow: 2px 2px 18px 0 rgba(43,71,154,0.50), 0 0 35px 0 rgba(43,71,154,0.50); 
+  background-size: cover;
+}
+
+.blue-box-right ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blue-box-right li {
+  padding: 15px 0px;
+  text-indent: 0;
+}
+
+.blue-box-right li:before {
+  content: "";
+  padding-right: 0px;
+}
+
+.blue-box-right a {
+  color: #10235C;
+  display: block;
+  font-size: 24px;
+  line-height: 26px;
+  padding: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+}
+
+.blue-box-right a:hover,
+.blue-box-right a:focus {
+  text-decoration: none;
+  color: #305173;
+  outline: 0;
+}
+
+.blue-box-right > .active > a,
+.blue-box-right > .active > a:hover,
+.blue-box-right > .active > a:focus {
+  color: #3451A3;
+  text-decoration: none;
+  outline: 0;
+}

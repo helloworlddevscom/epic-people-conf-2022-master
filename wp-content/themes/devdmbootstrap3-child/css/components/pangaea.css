@@ -1,0 +1,98 @@
+h1.pangaea-heading {
+    margin: 50px 0 15px 0;
+    text-align: center;
+    align-self: center;
+    margin: 0;
+}
+
+.img h1 a,
+.img a h1 {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 900;
+    text-align: center;
+}
+
+a:hover h1 {
+    text-decoration: underline;
+}
+
+h1 a:hover {
+    text-decoration: underline;
+}
+
+.pangaea-heading a {
+    color: #F0C958;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+/*Desktop Layout*/
+@media only screen and (min-width: 600px) {
+    .pangaea {
+        background: url('/wp-content/themes/devdmbootstrap3-child/img/Circles.png');
+        background-position: top;
+        background-size: 100%;
+        width: 95%;
+        background-repeat: no-repeat;
+        margin: 25px auto;
+        padding-top: 100px;
+
+    }
+
+    div.main-images {
+        margin: 20px auto 0 auto;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    div.main .img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 20px;
+    }
+
+    .img img {
+        width: 300px;
+        padding: 0;
+    }
+
+
+}
+
+/*Mobile Layout*/
+@media only screen and (max-width: 599px) {
+    .pangaea {
+        background: url('/wp-content/themes/devdmbootstrap3-child/img/Circles.png');
+        background-position: center;
+        background-size: 200%;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        padding-top: 50px;
+
+    }
+    div.main-images {
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img img {
+        width: 300px;
+        margin: 20px 0;
+        text-align: center;
+        align-self: center;
+        padding: 0;
+    }
+
+    div.img a h1 {
+        margin: 0;
+    }
+}
+

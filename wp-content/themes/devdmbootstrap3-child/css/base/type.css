@@ -1,0 +1,160 @@
+/* Typography */
+
+/* load Barlow Condensed and Work Sans font */
+@font-face {
+	font-family: 'Barlow Condensed';
+	src: url(/wp-content/themes/devdmbootstrap3-child/fonts/Barlow_Condensed/BarlowCondensed-Medium.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	src: url(/wp-content/themes/devdmbootstrap3-child/fonts/Work_Sans/static/WorkSans-Regular.ttf);
+	font-weight: normal;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	letter-spacing: 0;
+	color: #242424;
+}
+.home-show-desktop__sidebar ul li b, .home-show-desktop__sidebar ul li strong {
+	color:  #10235C;
+	font-size: 16px;
+}
+
+/* Links */
+
+a {
+	font-weight: 600;
+	color: #306EB3;
+}
+
+a:hover,
+a:focus {
+	color: #305173;
+}
+
+a:visited {
+	color: #3451A3;
+}
+
+/* If link is bold we should style it as though it were a "read more" link */
+strong a,
+a strong {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 18px;
+	color: #305173;
+	letter-spacing: 0.16px;
+	font-weight: 700;
+}
+
+
+/* Paragraphs */
+
+p {
+	line-height: 1.5;
+	font-size: 16px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+}
+
+/* Wordpress loves to add paragraphs to WYSIWYG content whenever possible. Even if they're empty. */
+p:empty {
+	display: none;
+	margin: 0;
+}
+
+
+/* Headers */
+
+h1,
+h1 a {
+	font-size: 28px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	color: #242424;
+	text-transform: uppercase;
+}
+
+@media (min-width: 778px) {
+	h1,
+	h1 a {
+		font-size: 32px;
+	}
+}
+
+h2,
+h2 a {
+	font-size: 32px;
+	font-family: "Barlow Condensed", sans-serif;
+	margin: 0 0 24px;
+	color: #10235C;
+}
+
+h2.page-header {
+	font-size: 32px;
+	font-weight: 700;
+	margin: 0;
+	color: #FFFFFF;
+}
+
+h3,
+h3 a {
+	font-size: 20px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	color: #10235C;
+}
+
+@media (min-width: 778px) {
+	h3,
+	h3 a {
+		font-size: 26px;
+	}
+}
+
+h4,
+h4 a {
+	font-size: 18px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	color: #242424;
+}
+
+/* Blockquote */
+
+blockquote {
+	margin: 40px 0;
+	padding: 20px;
+	border: none;
+}
+
+blockquote p {
+	margin: 0;
+	padding: 0;
+}
+
+blockquote,
+blockquote p {
+	font-size: 18px;
+	font-family: 'Work Sans', sans-serif;
+	color: #10235C;
+	letter-spacing: 0.5px;
+	text-align: left;
+	font-weight: 600;
+}
+
+blockquote:before,
+blockquote:after {
+	display: none;
+}
+
+@media (min-width: 992px) {
+	blockquote,
+	blockquote p {
+		font-size: 18px;
+	}
+}

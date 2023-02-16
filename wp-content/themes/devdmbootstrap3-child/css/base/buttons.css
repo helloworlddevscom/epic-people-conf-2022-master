@@ -1,0 +1,70 @@
+/**
+ * Buttons
+ *
+ * NOTE: This is an attempt to start refactoring this CSS,
+ * so it is written min-width instead of max-width like the rest of the CSS.
+ * This is to match the min-width of Bootstrap and make it less confusing.
+ */
+
+
+/* Buttons */
+
+.btn,
+.btn-primary,
+button:not([class]),
+  /* Also including all this specific styling so we don't have to duplicate this styling elsewhere. */
+.comment-reply-link, .comment-respond #submit, #wp-calendar #prev a, #wp-calendar #next a, #searchform #searchsubmit, .form-button {
+  min-height: 38px;
+  padding: 4px 40px;
+  margin: 20px 0 0 0;
+  border-radius: 2px;
+  border: none;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #306EB3;
+  transition: background-color .3s ease-in-out;
+  outline: none;
+  white-space: normal;
+}
+
+/* hover */
+.btn:hover,
+.btn:focus,
+.btn:hover:visited,
+.btn:focus:visited,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:hover:visited,
+.btn-primary:focus:visited,
+button:not([class]):hover,
+button:not([class]):focus,
+button:not([class]):hover:visited,
+button:not([class]):focus:visited {
+  color: #ffffff;
+  background-color: #305173;
+}
+
+/* active */
+.btn:active,
+.btn:active:visited,
+.btn-primary:active,
+.btn-primary:active:visited,
+button:not([class]):active,
+button:not([class]):active:visited {
+  color: #ffffff;
+  background-color: #10235C;
+}
+
+/* disabled */
+.btn.disabled,
+.btn-primary.disabled,
+button.disabled {
+  color: #7C7C7C;
+  background-color: #EBEEF2;
+}

@@ -1,0 +1,39 @@
+/**
+ * Content column.
+ */
+
+.committee-row {
+  clear: both;
+  overflow: hidden;
+  margin: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.content-column {
+  padding: 0 20px;
+}
+
+/** Half columns */
+
+.content-column.one_half {
+  padding-right: 29px;
+}
+
+.content-column.one_half.last_column {
+  padding-left: 29px;
+  padding-right: 10px;
+}
+
+.content-column > img {
+  max-width: 100%;
+}
+
+.content-column.full_width {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.content-column {
+
+}

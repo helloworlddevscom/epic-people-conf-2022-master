@@ -1,0 +1,65 @@
+/* Collapseomatic plugin */
+
+.collapseomatic {
+  display: inline-block;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 0 25px 2px 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  color: #306EB3;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  background-image: none;
+  background-size: 13px;
+  background-position: right center;
+}
+
+.collapseomatic:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 4px);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 6.5px 0 6.5px;
+  border-color: #306EB3 transparent transparent transparent;
+}
+
+.collapseomatic.colomat-close {
+  color: #306EB3
+}
+
+.collapseomatic.colomat-close:after {
+  transform: rotate(180deg);
+  top: calc(50% - 5px);
+}
+
+/**
+ * We're overriding the opening animation here.
+ * This div needs to be display: block because otherwise
+ * using a collapseomatic directly after another causes
+ * a situation where the second does not display on a new line.
+ * We cannot set .collapseomatic to display: block to resolve it because
+ * then the arrow is not in the right place. Our hands are tied by the
+ * markup that the plugin provides us.
+ */
+.collapseomatic_content {
+  display: block !important;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  margin-left: 45px;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  transition: .1s ease-in-out opacity;
+}
+
+.collapseomatic.colomat-close + .collapseomatic_content {
+  height: auto !important;
+  opacity: 1;
+}

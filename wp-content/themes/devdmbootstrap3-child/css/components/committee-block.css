@@ -1,0 +1,80 @@
+/**
+ * Committee Block.
+ */
+
+.committee-block {
+  width: 100%;
+  max-width: 290px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.committee-image > img {
+  margin: 0 auto;
+  width: 280px;
+  height: 280px;
+}
+.sponsored-panel.committee-image > img {
+  margin: 0 auto;
+  width: 131px;
+  height: 131px;
+}
+
+.committee-block p {
+  margin: 0;
+}
+
+.committee-block .committee-text {
+  padding: 17px 0 40px 0;
+}
+
+.committee-block .committee-text > *:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.committee-block .committee-text > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.committee-block .committee-text h6 {
+  display: block;
+  line-height: 29px;
+  margin: 0;
+  padding: 0;
+}
+
+.committee-block .committee-text p {
+  margin: 0;
+  font-size: 16px;
+  color: #242424;
+  letter-spacing: 0.16px;
+  text-align: left;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.sponsored-panel.committee-block .sponsored-panel.committee-text h4 {
+  font-size: 16px;
+  color: #10235C;
+  font-family: 'Work Sans', sans-serif;
+}
+.committee-block .committee-text h4,
+.committee-block .committee-text h4 a  {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  color: #10235C;
+}
+
+.committee-block .committee-text h4 + p {
+  margin-bottom: 7px;
+  line-height: 1.5;
+}
+
+.committee h2 {
+  margin-bottom: 24px;
+}

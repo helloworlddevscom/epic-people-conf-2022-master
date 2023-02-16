@@ -1,0 +1,62 @@
+/*
+ Misc. helper classes.
+*/
+
+
+/* Typography */
+
+.medium {
+    font-weight: 500;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+
+/* Link colors */
+
+a.link-color--yellow {
+    color: #F1D298;
+}
+
+a.link-color--yellow:hover,
+a.link-color--yellow:active {
+    color: #FFFFFF;
+}
+
+
+/* Padding */
+
+.padding--no-left {
+    padding-left: 0;
+}
+
+.padding--no-right {
+    padding-right: 0;
+}
+
+.padding--none {
+    padding: 0;
+}
+
+.padding--tablet {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.padding--phone {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/* Margin */
+
+.margin--none {
+    margin: 0;
+}
+
+.margin--no-top {
+    margin-top: 0;
+}
